@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Juego de ritmo</title>
+  <style>
+    body { background:#111; color:#eee; font-family:sans-serif; margin:0; text-align:center; }
+    canvas { background:#1b1b2b; margin-top:1rem; max-width:100%; }
+    #scores { display:flex; justify-content:center; gap:2rem; margin:1rem; }
+    button { font-size:1rem; padding:.5rem 1rem; }
+    table { margin:1rem auto; border-collapse:collapse; }
+    td, th { padding:.2rem .8rem; border-bottom:1px solid #333; }
+  </style>
+</head>
+<body>
+  <h1 id="title">Juego de ritmo</h1>
+  <button onclick="startGame()">Empezar</button>
+  <button onclick="stopGame()">Parar</button>
+  <div id="scores"></div>
+  <canvas id="game" width="900" height="450"></canvas>
+  <h3>Mejores puntuaciones</h3>
+  <table id="highscores"></table>
+  <script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>

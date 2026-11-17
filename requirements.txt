@@ -1,0 +1,4 @@
+Flask>=3.0
+gpiozero>=2.0      # solo Raspberry: pulsadores y LEDs
+lgpio              # backend GPIO (Raspberry Pi OS Bookworm)
+pygame>=2.5        # musica (pygame.mixer)
