@@ -3,7 +3,7 @@
 Hilos dentro de este proceso:
   1. hilo principal : atiende ordenes de la web (cmd_q)
   2. hilo JUEZ      : reloj, cuenta atras, notas falladas, fin de partida
-  3. hilos GPIO     : callbacks de gpiozero -> register_press()   (uno o varios)
+  3. hilos GPIO     : callbacks de gpiozero -> register_press()   (uno o varios) 
   4. hilo LED       : enciende/apaga LEDs segun el juicio          (led_q)
   5. hilo DB        : guarda resultados en SQLite                  (db_q)
 
@@ -135,7 +135,6 @@ class Engine:
                 continue
             db.save_result(con, *row)
         con.close()
-
 
 def run_engine(shared, cmd_q, audio_q):
     eng = Engine(shared, audio_q)
