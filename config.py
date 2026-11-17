@@ -3,8 +3,8 @@
 # --- Jugadores: un pulsador y un LED por jugador (pines GPIO, numeracion BCM)
 # Minimo exigido por el enunciado: 1 LED + 1 pulsador. Ajustar a los pines reales.
 PLAYERS = {
-    1: {"name": "Jugador 1", "button": 5,  "led": 12},
-    2: {"name": "Jugador 2", "button": 6,  "led": 16},
+    1: {"name": "Jugador 1", "button": 27,  "led": 12},
+    2: {"name": "Jugador 2", "button": 17,  "led": 16},
     3: {"name": "Jugador 3", "button": 13, "led": 20},
     4: {"name": "Jugador 4", "button": 19, "led": 21},
 }
